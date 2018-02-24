@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace AspNetWithFeatures.Features.Calculator
 {
-    public class CalculatorController : Controller
+    public partial class CalculatorController : Controller
     {
         // GET: Calculator
-        public ActionResult Index()
+        public virtual ActionResult Index()
         {
             return View();
         }

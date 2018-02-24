@@ -29,6 +29,7 @@ public static partial class MVC
 {
     public static AspNetWithFeatures.Controllers.HomeController Home = new AspNetWithFeatures.Controllers.T4MVC_HomeController();
     public static T4MVC.SharedController Shared = new T4MVC.SharedController();
+    public static AspNetWithFeatures.Features.Calculator.CalculatorController Calculator = new AspNetWithFeatures.Features.Calculator.T4MVC_CalculatorController();
 }
 
 namespace T4MVC
