@@ -13,17 +13,17 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using R4Mvc;
 
-namespace AspNetCoreWithFeatures.Areas.Admin.Controllers
+namespace AspNetCoreWithFeatures.Features.Calculator
 {
-    public partial class DashboardController
+    public partial class CalculatorController
     {
         [GeneratedCode("R4Mvc", "1.0"), DebuggerNonUserCode]
-        public DashboardController()
+        public CalculatorController()
         {
         }
 
         [GeneratedCode("R4Mvc", "1.0"), DebuggerNonUserCode]
-        protected DashboardController(Dummy d)
+        protected CalculatorController(Dummy d)
         {
         }
 
@@ -54,13 +54,13 @@ namespace AspNetCoreWithFeatures.Areas.Admin.Controllers
         }
 
         [GeneratedCode("R4Mvc", "1.0")]
-        public DashboardController Actions => MVC.Admin.Dashboard;
+        public CalculatorController Actions => MVC.Calculator;
         [GeneratedCode("R4Mvc", "1.0")]
-        public readonly string Area = "Admin";
+        public readonly string Area = "";
         [GeneratedCode("R4Mvc", "1.0")]
-        public readonly string Name = "Dashboard";
+        public readonly string Name = "Calculator";
         [GeneratedCode("R4Mvc", "1.0")]
-        public const string NameConst = "Dashboard";
+        public const string NameConst = "Calculator";
         [GeneratedCode("R4Mvc", "1.0")]
         static readonly ActionNamesClass s_ActionNames = new ActionNamesClass();
         [GeneratedCode("R4Mvc", "1.0")]
@@ -96,9 +96,9 @@ namespace AspNetCoreWithFeatures.Areas.Admin.Controllers
     }
 
     [GeneratedCode("R4Mvc", "1.0"), DebuggerNonUserCode]
-    public partial class R4MVC_DashboardController : AspNetCoreWithFeatures.Areas.Admin.Controllers.DashboardController
+    public partial class R4MVC_CalculatorController : AspNetCoreWithFeatures.Features.Calculator.CalculatorController
     {
-        public R4MVC_DashboardController(): base (Dummy.Instance)
+        public R4MVC_CalculatorController(): base (Dummy.Instance)
         {
         }
 

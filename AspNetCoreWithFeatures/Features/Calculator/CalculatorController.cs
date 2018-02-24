@@ -6,10 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace AspNetCoreWithFeatures.Areas.Admin.Controllers
+namespace AspNetCoreWithFeatures.Features.Calculator
 {
-    [Area("Admin")]
-    public partial class DashboardController : Controller
+    public partial class CalculatorController : Controller
     {
         // GET: /<controller>/
         public virtual IActionResult Index()

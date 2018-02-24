@@ -16,7 +16,11 @@ using R4Mvc;
 [GeneratedCode("R4Mvc", "1.0"), DebuggerNonUserCode]
 public static partial class MVC
 {
-    public static readonly AspNetCoreWithFeatures.Areas.Admin.Controllers.DashboardController Dashboard = new AspNetCoreWithFeatures.Areas.Admin.Controllers.R4MVC_DashboardController();
+    [GeneratedCode("R4Mvc", "1.0")]
+    static readonly R4Mvc.AdminAreaClass s_Admin = new R4Mvc.AdminAreaClass();
+    [GeneratedCode("R4Mvc", "1.0")]
+    public static R4Mvc.AdminAreaClass Admin => s_Admin;
+    public static readonly AspNetCoreWithFeatures.Features.Calculator.CalculatorController Calculator = new AspNetCoreWithFeatures.Features.Calculator.R4MVC_CalculatorController();
     public static readonly AspNetCoreWithFeatures.Controllers.HomeController Home = new AspNetCoreWithFeatures.Controllers.R4MVC_HomeController();
     public static readonly R4Mvc.SharedController Shared = new R4Mvc.SharedController();
 }
@@ -59,6 +63,14 @@ namespace R4Mvc
         static readonly ViewsClass s_Views = new ViewsClass();
         [GeneratedCode("R4Mvc", "1.0")]
         public ViewsClass Views => s_Views;
+    }
+
+    [GeneratedCode("R4Mvc", "1.0"), DebuggerNonUserCode]
+    public partial class AdminAreaClass
+    {
+        public readonly string Name = "Admin";
+        public readonly AspNetCoreWithFeatures.Areas.Admin.Controllers.DashboardController Dashboard = new AspNetCoreWithFeatures.Areas.Admin.Controllers.R4MVC_DashboardController();
+        public readonly AspNetCoreWithFeatures.Areas.Admin.Features.Users.UsersController Users = new AspNetCoreWithFeatures.Areas.Admin.Features.Users.R4MVC_UsersController();
     }
 }
 
