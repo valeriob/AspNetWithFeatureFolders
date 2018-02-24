@@ -86,7 +86,12 @@ namespace AspNetCoreWithFeatures.Areas.Admin.Features.Users
             public _ViewNamesClass ViewNames => s_ViewNames;
             public class _ViewNamesClass
             {
+                public readonly string Edit = "Edit";
+                public readonly string Index = "Index";
             }
+
+            public string Edit = "~/Areas/Admin/Features/Users/Edit.cshtml";
+            public string Index = "~/Areas/Admin/Features/Users/Index.cshtml";
         }
 
         [GeneratedCode("R4Mvc", "1.0")]

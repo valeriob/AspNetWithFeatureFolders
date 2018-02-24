@@ -86,7 +86,10 @@ namespace AspNetCoreWithFeatures.Features.Calculator
             public _ViewNamesClass ViewNames => s_ViewNames;
             public class _ViewNamesClass
             {
+                public readonly string Index = "Index";
             }
+
+            public string Index = "~/Features/Calculator/Index.cshtml";
         }
 
         [GeneratedCode("R4Mvc", "1.0")]
