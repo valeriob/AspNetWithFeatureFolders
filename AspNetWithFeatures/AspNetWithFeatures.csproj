@@ -145,6 +145,21 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Area1.FeaturesController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Area1.HomeController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Area1.Uc1Controller.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Area1.ViewsController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Area1\Area1AreaRegistration.cs" />
+    <Compile Include="Areas\Area1\Features\Home\HomeController.cs" />
+    <Compile Include="Areas\Area1\Uc1\HomeController.cs" />
     <Compile Include="CalculatorController.generated.cs">
       <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
@@ -181,6 +196,9 @@
     </Content>
     <Content Include="Features\Calculator\Index.cshtml" />
     <Content Include="NonFeature\Index.cshtml" />
+    <Content Include="Areas\Area1\Views\web.config" />
+    <Content Include="Areas\Area1\Features\Home\Index.cshtml" />
+    <Content Include="Areas\Area1\Uc1\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -215,6 +233,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Area1\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

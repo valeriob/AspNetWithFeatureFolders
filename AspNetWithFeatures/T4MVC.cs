@@ -27,6 +27,8 @@ using T4MVC;
 [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
 public static partial class MVC
 {
+    static readonly Area1Class s_Area1 = new Area1Class();
+    public static Area1Class Area1 { get { return s_Area1; } }
     public static AspNetWithFeatures.Controllers.HomeController Home = new AspNetWithFeatures.Controllers.T4MVC_HomeController();
     public static T4MVC.SharedController Shared = new T4MVC.SharedController();
     public static AspNetWithFeatures.Features.Calculator.CalculatorController Calculator = new AspNetWithFeatures.Features.Calculator.T4MVC_CalculatorController();
@@ -34,6 +36,15 @@ public static partial class MVC
 
 namespace T4MVC
 {
+    [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+    public class Area1Class
+    {
+        public readonly string Name = "Area1";
+        public AspNetWithFeatures.Areas.Area1.Features.Home.HomeController Home = new AspNetWithFeatures.Areas.Area1.Features.Home.T4MVC_HomeController();
+        public AspNetWithFeatures.Areas.Area1.Uc1.Uc1Controller Uc1 = new AspNetWithFeatures.Areas.Area1.Uc1.T4MVC_Uc1Controller();
+        public T4MVC.Area1.FeaturesController Features = new T4MVC.Area1.FeaturesController();
+        public T4MVC.Area1.ViewsController Views = new T4MVC.Area1.ViewsController();
+    }
 }
 
 #pragma warning disable 0436
